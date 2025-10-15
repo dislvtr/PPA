@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc} % Pacote para acentuação
+\usepackage[brazil]{babel} % Para quem vai escrever em português brasileiro
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry} %Formato que lembra a ABNT
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont,mathtools} %pacotes matemáticos
+\usepackage{graphicx}
+
+\documentclass[12pt]{report}
+
+
+\begin{document}
+\headcm \todayr
+\section{Aprendendo a Criar uma Matriz no LaTex}
+\vspace{2cm}
+\begin{center}
+$
+\left(\begin{array} {ccc}
+    \frac{1}{2} & b & x^2\\
+    C & \sqrt{x+1} & g\\
+    \sqrt[3]{8} & i & \displaystyle\lim_{x\xrightarrow 0}f(x)
+
+\end{array}\right)
+$
+
+\end{center}
+\section{Equações Matemáticas \LaTex}
+\begin{equation}
+    y=x^2 + 1
+\end{equation}
+
+\begin{equation}
+    \displaystyle\int_0^1 f(x)dx
+\end{equation}
+\section{Elementos Matemáticos \LaTex}
+\begin{itemize}
+
+    \item [] 1) Sinal da Soma: + ou $+$
+    \item [] 2) Sinal da Diferença: - ou $-$
+    \item [] 3) Sinal do Produto: x.y ou $x.y$
+    \item [] 3.1) Sinal do Produto $x\cdot y$ ou $x\times y$
+    \item [] 4) Sinal de Divisão: $\frac{x}{y}$ ou $\dfrac{x}{y}$
+    \item [] 4.1) Sinal de Divisão $x\div y$
+
+\end{itemize}
+\section{Aprendendo a Criar uma Tabela no LaTex}
+\begin{table}[!]
+\centering
+    \begin{tabular}{l|c|c|c}\hline
+    \textbf{Matérias}      & \textbf{Prova 1} & \textbf{Prova 2} & \textbf{Nota Final} \\\hline
+         Cálculo 1              &  7,5 & 7,0 & $NFC_1$\\
+         Álgebra Linear         &  8,5 & 6,0 & $NFA$\\
+         Química 1              &  6,5 & 6,0 & $NFQ_1$\\
+         Intro. às Engenharias  &  9,5 & 10,0& $NFI$\\ 
+    \end{tabular}
+    \caption{Relação de Matérias e Notas Obtidas}
+    \label{tab01}
+\end{table}
+
+\begin{table}[!]
+\centering
+    \begin{tabular}{l|c|c|c}\hline
+    \textbf{Matérias}      & \textbf{Prova 1} & \textbf{Prova 2} & \textbf{Nota Final} \\\hline
+         Cálculo 1              &  7,5 & 7,0 & $NFC_1$\\
+         Álgebra Linear         &  8,5 & 6,0 & $NFA$\\
+         Química 1              &  6,5 & 6,0 & $NFQ_1$\\
+         Intro. às Engenharias  &  9,5 & 10,0& $NFI$\\ 
+    \end{tabular}
+    \caption{Relação de Reprovações}
+    \label{tab02}
+\end{table}
+Estou falando da tabela de notas(ver Tabela \ref{tab01}) e não da tabela de reprovações (ver Tabela \ref{tab02}).
+
+\end{document}
